@@ -22,7 +22,10 @@ if (status === 'unauthenticated' && pathName === '/profile') {
           </h1>
           <p className="desc text-left">{desc}</p>
         </div>
-        { pathName === '/profile' &&  <FormEditProfile username={session?.user.name} imageUrl = {session?.user.image}/>}
+        { pathName === '/profile' &&  
+                <FormEditProfile
+                       username={session?.user.name} 
+                       imageUrl = {session?.user.image}/>}
        
       </div>
       
